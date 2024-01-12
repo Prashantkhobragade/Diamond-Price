@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from sklearn.model_selection import train_test_split
+
 @dataclass
 class DataIngestionConfig:
     raw_data_path:str = os.path.join("artifacts","raw.csv")
