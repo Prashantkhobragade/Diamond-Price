@@ -8,16 +8,18 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
+from src.utils.utils import save_object, evaluate_model
+
 @dataclass
-class DataIngestionConfig:
+class ModelTrainerConfig:
     pass
 
-class DataIngestion:
+class ModelTrainer:
     def __init__(self):
         pass
     
-    def initiate_data_ingestion(self):
+    def initiate_model_training(self):
         try:
             pass
         except Exception as e:

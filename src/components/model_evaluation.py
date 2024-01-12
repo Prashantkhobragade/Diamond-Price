@@ -8,16 +8,21 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from urllib.parse import urlparse
+import mlflow
+import mlflow.sklearn
+import pickle
+from src.utils.utils import load_object
 @dataclass
-class DataIngestionConfig:
+class ModelEvaluationConfig:
     pass
 
-class DataIngestion:
+class ModelEvaluation:
     def __init__(self):
         pass
     
-    def initiate_data_ingestion(self):
+    def initiate_model_evaluation(self):
         try:
             pass
         except Exception as e:
